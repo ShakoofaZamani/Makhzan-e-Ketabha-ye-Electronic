@@ -1,0 +1,165 @@
+/* style of body for all pages */
+body {
+  background-color: rgb(200, 218, 218);
+  margin: 0;
+}
+/* header for all pages */
+header {
+  position: relative;
+  background-color: rgb(39, 129, 129);
+  box-shadow: 0 2px 4px rgba(100, 149, 237, 2);
+  display: center;
+  padding: 25px;
+  border-radius: 25px;
+  position: sticky;
+  top: 0px;
+  z-index: +5;
+}
+nav ul li {
+  margin: 0 10px;
+}
+ul,
+a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #110c0caf;
+  transition: background-color 0.5s;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgb(200, 218, 218);
+}
+/* first section top movie */
+.TopContainer h2 {
+  justify-content: center;
+  text-align: center;
+}
+.TopContainer img {
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  position: relative;
+  display: block;
+  width: 98%;
+  height: 10%;
+}
+.topmovie {
+  justify-content: center;
+  text-align: center;
+}
+/* list of all movies  */
+.MainContainer h2 {
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+}
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-left: 45px;
+}
+.book-items {
+  gap: 10;
+  border-radius: 20px;
+  border-color: rgb(4, 20, 20);
+  padding: 20px 20px;
+  margin: 8px;
+  background-color: rgb(39, 129, 129);
+  box-shadow: 0 2px 4px rgba(100, 149, 237, 5);
+}
+.book-items img {
+  border-radius: 5px;
+  border-color: aliceblue;
+  position: relative;
+  display: inline-block;
+  height: inherit;
+}
+
+.overimage {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(39, 129, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+/* page of  all movives  pagination */
+.pagination {
+  background: rgb(39, 129, 129);
+
+  display: inline-flex;
+  margin-left: 500px;
+  padding: 0;
+  border-radius: 20px;
+  position: center;
+}
+.pagination li {
+  list-style: none;
+  line-height: 40px;
+  margin-left: 5px;
+}
+.pagination li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+}
+.pagination li.page {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+li.page:hover a,
+li.page.active a {
+  background: #1b474daf;
+  color: rgb(39, 129, 129);
+  font-weight: bold;
+}
+
+li.prev:hover a,
+li.next:hover a {
+  background: #1b474daf;
+}
+/* footer for all  my pages */
+footer p {
+  font-size: 24px;
+  text-align: center;
+}
+footer {
+  margin-top: auto;
+  background-color: rgb(39, 129, 129);
+  box-shadow: 0 2px 4px rgba(100, 149, 237, 2);
+  bottom: 0;
+  padding: 1px;
+  border-radius: 25px;
+  position: sticky;
+}
